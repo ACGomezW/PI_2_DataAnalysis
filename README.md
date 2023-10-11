@@ -67,14 +67,27 @@ En el análisis exploratorio se realizaron varias métricas con el fin de establ
 
 ### Conclusiones
 
-A lo largo del tiempo los accidentes aéreos han variado en su cantidad, viendo tendencias marcadas, por ejemplo en la década del 20' donde el avión comienza a aumentar su comercialización. Se observa un marcado aumento en la década del 40' interpretando que coincidentemente se produce la Segunda Guerra Mundial y la posterior Guerra de Vietnam que pudo ser uno de los motivos de tal incremento.
-Asimismo se nota una baja de esa tendencia posteriormente a la década del 80' en adelante, quizas por los avances tecnológicos y computarizados que mejoraron la seguridad de los aparatos. Respecto de la hora declarada de los accidentes, se puede evaluar que la mayoría se han producido en horas del día. 
-El país con mayor indice de accidentes es Estados Unidos, teniendo ese solo país mas del 30% del total de accidentes, asumiendo que se trata del pais con mayor tráfico aéreo, y la diversidad de operadores y flotas. Asimismo si se observa el gráfico de mapa se puede observar que una gran cantidad de accidentes se han producido en regiones montañosas, considerando que ese es un factor importante a la hora de evaluar causas.
-Respecto de las fatalidades ocurridads en los accidentes se puede observar que si bien es lógico que entre las víctimas haya un mayor porcentaje de pasajeros frente a la tripulación, a principios de siglo esa tendencia no era tan marcada, asumiendo que la causa se da por el tipo de aeronave, haciendo que a medida que los aviones comerciales se expandieran, esa brecha se agrandara. Por eso mismo se observa una gran tendencia de accidentes de aviones frente a otras aeronaves y del tipo comercial frente a otros tipos de operadores.   
-La tasa de mortalidad es en promedio de mas del 70%, se puede observar que si bien ha bajado la cantidad de accidentes, esa tasa ha permanecido casi uniforme a lo largo del tiempo. 
+A lo largo del tiempo los accidentes aéreos han variado en su cantidad, viendo tendencias marcadas, por ejemplo en la década del 20' donde el avión comienza a aumentar su comercialización. Se observa un marcado aumento en la década del 40' interpretando que coincidentemente se produce la Segunda Guerra Mundial y la posterior Guerra de Vietnam que pudo ser uno de los motivos de tal incremento.  
+Asimismo se nota una baja de esa tendencia posteriormente a la década del 80' en adelante, quizas por los avances tecnológicos y computarizados que mejoraron la seguridad de los aparatos. Respecto de la hora declarada de los accidentes, se puede evaluar que la mayoría se han producido en horas del día.   
+El país con mayor indice de accidentes es Estados Unidos, teniendo ese solo país mas del 30% del total de accidentes, asumiendo que se trata del pais con mayor tráfico aéreo, y la diversidad de operadores y flotas. Asimismo si se observa el gráfico de mapa se puede observar que una gran cantidad de accidentes se han producido en regiones montañosas, considerando que ese es un factor importante a la hora de evaluar causas.  
+Respecto de las fatalidades ocurridads en los accidentes se puede observar que si bien es lógico que entre las víctimas haya un mayor porcentaje de pasajeros frente a la tripulación, a principios de siglo esa tendencia no era tan marcada, asumiendo que la causa se da por el tipo de aeronave, haciendo que a medida que los aviones comerciales se expandieran, esa brecha se agrandara. Por eso mismo se observa una gran tendencia de accidentes de aviones frente a otras aeronaves y del tipo comercial frente a otros tipos de operadores.     
+La tasa de mortalidad es en promedio de mas del 70%, se puede observar que si bien ha bajado la cantidad de accidentes, esa tasa ha permanecido casi uniforme a lo largo del tiempo.   
 Es de gran importancia que si bien los avances tecnológicos han contribuído a la marcada baja en accidentes, se pueda seguir avanando con los estudios correspondientes para que la tasa de mortalidad tenga una tendencia alcista. 
 
+## Requerimientos
+Python  
+Scikit -Learn  
+Pandas  
+Numpy  
+Matploblib  
+Seaborn   
+Nltk  
+PowerBi
 
+## Autor
+Alicia Cecilia Gómez Wallingre  
+Mail: cecigomezwallingre@gmail.com  
+LinkedIn: https: //www.linkedin.com/in/cecilia-gomez-wallingre
 
 
 
