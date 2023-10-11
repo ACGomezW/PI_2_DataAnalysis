@@ -48,5 +48,34 @@ En el análisis exploratorio se realizaron varias métricas con el fin de establ
   Se cargó el nuevo archivo 'vuelos' con formato csv a PowerBi, donde a traves de Power Query se realizaron transformaciones de modo tal que el archivo original quede dividido en tablas, resultando la tabla de hechos 'vuelo' y tres tablas de dimensiones 'operador', 'tipo_modelo' y 'pais', agregando las columnas de identificación para cada una y vinculando ese dato a la tabla de hechos para crear un Diagrama de Entidad Relación que fuera concordante para el análisis.  
   Además se creó la tabla 'Calendario' con sus cálculos por año, mes, trimestre para la interpretación de datos.  
   Se efectuaron distintos cálculos de medidas para determinar patrones o tendencias mediante gráficos interactivos. 
-  El Dashboard consta de 
+  El Dashboard consta de cuatro páginas mas la portada. 
+  En la primera página *'General'* se graficaron los principales indicadores de siniestros por pais, por año, y también por hora, junto con la tabla que muestra los paises con mayores índices de accidentes. Se aplicaron filtros para un mejor control del usuario de acuerdo a sus necesidades y preferencias.
+  ![General](https://github.com/ACGomezW/PI_2_DataAnalysis/assets/135540204/c8765349-45e9-49c1-9638-55d6486fbe85)  
+  
+  La segunda página *'fatalidades'* muestra los índices de las víctimas de accidentes, asi también las variaciones de cifras de fallecimientos de acuerdo a los tipos de operadores y modelos.
+  ![fatalidades](https://github.com/ACGomezW/PI_2_DataAnalysis/assets/135540204/fc5000d8-d1c8-4997-a9eb-27555c838448)  
+  
+  La tercer página *'operadores y modelos'* muestra la variaciones de los accidentes de acuerdo al tipo de operador, al tipo de modelo o al modelo en sí mismo. 
+![OperadorsyModelos](https://github.com/ACGomezW/PI_2_DataAnalysis/assets/135540204/2af1b625-51bf-4a6b-a32a-2dc7272d032f)  
+
+  la cuarta página *'Claves'* muestra indicadores de acuerdo a objetivos propuestos: 
+  * El primer indicador muestra el índice de mortalidad en tripulantes de aeronaves diferenciando las últimas dos décadas. El objetivo propuesto es reducir en un 10% ese índice en la última década respecto de la anterior. Este objetivo no se pudo cumplir ya que en la última década el índice de mortalidad en la tripulación fue mayor que en la anterior.
+  * El segundo indicador muestra el índice de supervivencia en general de los ocupantes de aeronaves a lo largo del tiempo. El objetivo propuesto es aumentar en un 5% ese índice respecto del año anterior. Este objetivo no se cumplió dado que en el último año el índice de supervivencia fue menor que el anterior.
+
+    Aquí se anexan gráficos descriptivos del análisis realizado. 
+![claves](https://github.com/ACGomezW/PI_2_DataAnalysis/assets/135540204/c2714674-3924-4161-8494-db3356ac6c9a)
+
+### Conclusiones
+
+A lo largo del tiempo los accidentes aéreos han variado en su cantidad, viendo tendencias marcadas, por ejemplo en la década del 20' donde el avión comienza a aumentar su comercialización. Se observa un marcado aumento en la década del 40' interpretando que coincidentemente se produce la Segunda Guerra Mundial y la posterior Guerra de Vietnam que pudo ser uno de los motivos de tal incremento.
+Asimismo se nota una baja de esa tendencia posteriormente a la década del 80' en adelante, quizas por los avances tecnológicos y computarizados que mejoraron la seguridad de los aparatos. Respecto de la hora declarada de los accidentes, se puede evaluar que la mayoría se han producido en horas del día. 
+El país con mayor indice de accidentes es Estados Unidos, teniendo ese solo país mas del 30% del total de accidentes, asumiendo que se trata del pais con mayor tráfico aéreo, y la diversidad de operadores y flotas. Asimismo si se observa el gráfico de mapa se puede observar que una gran cantidad de accidentes se han producido en regiones montañosas, considerando que ese es un factor importante a la hora de evaluar causas.
+Respecto de las fatalidades ocurridads en los accidentes se puede observar que si bien es lógico que entre las víctimas haya un mayor porcentaje de pasajeros frente a la tripulación, a principios de siglo esa tendencia no era tan marcada, asumiendo que la causa se da por el tipo de aeronave, haciendo que a medida que los aviones comerciales se expandieran, esa brecha se agrandara. Por eso mismo se observa una gran tendencia de accidentes de aviones frente a otras aeronaves y del tipo comercial frente a otros tipos de operadores.   
+La tasa de mortalidad es en promedio de mas del 70%, se puede observar que si bien ha bajado la cantidad de accidentes, esa tasa ha permanecido casi uniforme a lo largo del tiempo. 
+Es de gran importancia que si bien los avances tecnológicos han contribuído a la marcada baja en accidentes, se pueda seguir avanando con los estudios correspondientes para que la tasa de mortalidad tenga una tendencia alcista. 
+
+
+
+
+
 
