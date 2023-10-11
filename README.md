@@ -8,10 +8,10 @@ Data Science- Soy Henry
 
 ### Contexto
 
-Este proyecto se centra en el análisis de accidentes aereos, con el objetivo de comprender mejor tendencias y patrones relacionados con los accidentes de aviación. 
+Este proyecto se centra en el análisis de accidentes aéreos, con el objetivo de comprender mejor tendencias y patrones relacionados con los accidentes de aviación. 
 En el rol de Data Analytics se utilizarán los datos para obtener información significativa que ayude a la toma de decisiones y resolución de problemas.
 
-Los accidentes de aviones han sido un tema de gran importancia en la industria de la aviación; y su análisis es esencial para identificar las posibles causas de los accidentes, mejorar la seguridad y la prevención de futuros accidentes, evaluar las medidas de seguridad y regulaciones existentes.
+Los accidentes aéreos sean aviones, helicópteros o dirigibles han sido un tema de gran importancia en la industria de la aviación; y su análisis es esencial para identificar las posibles causas de los accidentes, mejorar la seguridad y la prevención de futuros accidentes, evaluar esas medidas y regulaciones existentes.
 
 ### Dataset
 
@@ -21,17 +21,32 @@ El dataset original posee información acerca de vuelos que han sufrido accident
 
 ## **E.T.L.** *(Extract, Transform and Load)*
 
-Se cargó el archivo formato csv, para trabajar con Python, realizando una primera inspección de algunas columnas, se eliminan posibles registros duplicados y se realizan las transformaciones necesarias para la identificación de registros nulos. Se imputan valores faltantes con el objetivo de no perder información relevante. También se llevó a cabo la transformación de tipo de dato para un correcto análisis y se normalizaron columnas categoricas que tenian información muy importante, pero con datos poco estructurados, se categorizaron y clasificaron para una mejor comprensión de los datos. 
-Se crearon 'Nubes de palabras' para una aproximación a las causas de los accidentes y con el fin de identificar patrones comunes en la información. Posteriormente se detectaron 'outliers' (datos atípicos) y se analizó caso por caso su posible imputación o eliminación del archivo. Finalmente se eliminaron columnas innecesarias para el análisis.
+  Se cargó el archivo formato csv, para trabajar con Python, realizando una primera inspección de algunas columnas, se eliminan posibles registros duplicados y se realizan las transformaciones necesarias para la identificación de registros nulos que no se registraban como tal, sino que tenían un '?' en su lugar. Se imputan valores faltantes en las columnas numéricas de las víctimas de los siniestros, con el objetivo de no perder información relevante. 
+  También se llevó a cabo la transformación de tipo de dato para un correcto análisis y se normalizaron y clasificaron columnas categóricas que tenían información muy importante, pero con datos poco estructurados, para una mejor comprensión.  
+  * Se categorizaron las columnas que describían la ubicación (dejando el nombre del país).
+  * Se categorizó también la columna 'operador', ya que con un gráfico de 'nube de palabras' se observó que los operadores eran militares, privados y una gran proporción eran empresas comerciales.
+  * Con la columna de 'modelo' se agregó una columna que clasifica su tipo en aviones, helicópteros o dirigibles, aún asi se deja la columna 'modelo' pues se consider útil para el análisis.
+  
+  Se crearon 'Nubes de palabras' para una aproximación a las causas de los accidentes y con el fin de identificar patrones comunes en la información.  
+  Posteriormente se detectaron 'outliers' (datos atípicos) mediante gráficos y funciones visualizando y analizando caso por caso su posible imputación o eliminación del archivo.  
+  Finalmente se eliminaron columnas innecesarias para el análisis.
 
 ## **E.D.A.** *(Exploratory Data Analysis)*
 
-En el análisis exploratorio se realizaron varias métricas con el fin de establecer relaciones entre las variables y comprender mejor su relación, para tener un mejor 'conocimiento de negocio'. Para las variables numéricas se realizaron gráficos de dispersión, matriz de correlación de variables, observación de medidas de tendencia central. Para las categóricas se realizaron gráficos de barras, barras apliladas, circulares, y con el Procesamiento de Lenguaje Natural también se realizó 'Nube de Palabras' para el estudio de tendencias. 
+En el análisis exploratorio se realizaron varias métricas con el fin de establecer relaciones entre las variables y comprender mejor su relación, para tener un mejor 'conocimiento de negocio':
+* Para las variables numéricas se realizaron gráficos de dispersión, para observar relaciones entre sí.
+* Se graficó una matriz de correlación de las variables con el cual se identificaron las que son extremadamente dependientes de aquellas que no lo son.
+* Se observaron las medidas de tendencia central para un mejor escenario de los datos.
 
+* Para las variables categóricas se realizaron gráficos de barras, barras apliladas, circulares con los que se observaron cantidades en el agrupamiento, las fuertes tendencias de algunas variables en particular (de operador o de modelo).
+* Con el Procesamiento de Lenguaje Natural también se realizó 'Nube de Palabras' para el estudio de la columna que describe el resúmen de los datos, a fin de identificar patrones en común que pudieran dilucidar causas de los siniestros.
 
-Una vez realizados estos dos procesos se guarda el archivo 'limpio' en un nuevo archivo llamado 'vuelos' formato 'csv'.
+  Una vez realizados estos dos procesos se guarda el archivo 'limpio' en un nuevo archivo llamado 'vuelos' formato 'csv'.
 
-## ** Visualización**
+## **Visualización**
 
-Se cargó el nuevo archivo a PowerBi, donde a traves de Power Query se realizaron transformaciones de modo tal que el archivo original quede dividido en tablas, resultando la tabla de hechos 'vuelo' y tres tablas de dimensiones 'operador', 'tipo_modelo' y 'pais'. Además se creó la tabla 'Calendario' y se efectuaron distintos cálculos de medidas para determinar patrones o tendencias mediante gráficos interactivos. 
+  Se cargó el nuevo archivo 'vuelos' con formato csv a PowerBi, donde a traves de Power Query se realizaron transformaciones de modo tal que el archivo original quede dividido en tablas, resultando la tabla de hechos 'vuelo' y tres tablas de dimensiones 'operador', 'tipo_modelo' y 'pais', agregando las columnas de identificación para cada una y vinculando ese dato a la tabla de hechos para crear un Diagrama de Entidad Relación que fuera concordante para el análisis.  
+  Además se creó la tabla 'Calendario' con sus cálculos por año, mes, trimestre para la interpretación de datos.  
+  Se efectuaron distintos cálculos de medidas para determinar patrones o tendencias mediante gráficos interactivos. 
+  El Dashboard consta de 
 
