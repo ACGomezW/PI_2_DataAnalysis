@@ -6,6 +6,11 @@ Data Science- Soy Henry
 ![AdobeStock_618340412](https://github.com/ACGomezW/PI_2_DataAnalysis/assets/135540204/6ab1898d-6f21-4d1b-81b9-08ff4d37441a)
 
 
+## Autor
+Alicia Cecilia Gómez Wallingre  
+Mail: cecigomezwallingre@gmail.com  
+LinkedIn: https: //www.linkedin.com/in/cecilia-gomez-wallingre
+
 ### Contexto
 
 Este proyecto se centra en el análisis de accidentes aéreos, con el objetivo de comprender mejor tendencias y patrones relacionados con los accidentes de aviación. 
@@ -84,10 +89,6 @@ Seaborn
 Nltk  
 PowerBi
 
-## Autor
-Alicia Cecilia Gómez Wallingre  
-Mail: cecigomezwallingre@gmail.com  
-LinkedIn: https: //www.linkedin.com/in/cecilia-gomez-wallingre
 
 
 
